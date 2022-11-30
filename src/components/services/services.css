@@ -1,0 +1,55 @@
+.services_container {
+  margin-left: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.service {
+  background: rgba(51, 73, 70, 0.432);
+  border-radius: 0 0 2rem 2rem;
+  backdrop-filter: blur(2px);
+  width: 80%;
+  height: fit-content;
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: transparent;
+  cursor: default;
+  border-color: var(--color-bg-variant);
+}
+
+.service:hover h4 {
+  color: blue;
+}
+
+.service_head h4 {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  font-style: bold;
+  text-align: center;
+}
+
+.service_head {
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(44, 253, 25, 0.1);
+}
+
+.service_list {
+  padding: 2rem;
+}
+
+.service_list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service_list-icon {
+  color: aquamarine;
+  margin-top: 2px;
+}

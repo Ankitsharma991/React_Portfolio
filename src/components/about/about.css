@@ -1,0 +1,116 @@
+.about_container {
+  margin-left: 20rem;
+  display: grid;
+  grid-template-columns: 20% 30%;
+  gap: 21%;
+  margin-top: 15rem;
+}
+.about_me {
+  width: 100%;
+  background-image: url("../../assets/hover.jpg");
+  display: grid;
+  place-items: center;
+}
+
+.about_me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate3d(0, 0, 1, 360deg);
+  transition: 2s;
+  margin-bottom: 0.5rem;
+}
+.about_me-image:hover {
+  background-image: url("../../assets/nas.jpg");
+  transform: rotate3d(0, 1, 0, 180deg);
+  transition: 2s;
+}
+
+.about_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about_card {
+  background: rgba(51, 73, 70, 0.432);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.about_card:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  cursor: default;
+  backdrop-filter: blue(2px);
+}
+.about_card:hover .about_icon {
+  color: var(--color-primary);
+}
+
+.about_icon {
+  color: rgb(35, 149, 255);
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.about_card small {
+  font-size: 0.7rem;
+  color:rgb(35, 149, 255);
+}
+
+.about_card h5 {
+  font-size: 0.9rem;
+  color:rgb(35, 149, 255);
+}
+.about_content p {
+  margin: 2rem 0 2.6rem;
+}
+
+/********************* Media Queries *********************/
+
+/*@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  #about{
+    margin-top: 3rem;
+  }
+  .about_me {
+    width: 50%;
+    margin: 0rem auto 5rem;
+    margin-left: 5rem;
+    height: auto;
+  }
+  .about_cards {
+    margin-top: -10rem;
+    gap: 1rem;
+  }
+  .about_card {
+    padding: 1rem;
+  }
+  .about_content p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .about_content .letTalk {
+    margin-top: -3rem;
+    margin-left: 40%;
+  }
+  .about_content p{
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px){
+    .about_container{
+        margin-left: 15rem;
+    }
+    .about_me{
+        width: 150%;
+        height: 95%;
+    }
+}
+*/

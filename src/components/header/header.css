@@ -1,0 +1,191 @@
+header {
+  height: 100vh;
+  padding-top: 1.5rem;
+  overflow: hidden;
+}
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/****************** CTA ******************/
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*=========== HEADER SOCIALS ===================*/
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 15rem;
+  bottom: 8rem;
+}
+
+.header_socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/*------------- ME ---------------------*/
+
+.me {
+  /* background: linear-gradient(black, transparent); */
+  background-image: url(../../assets/nasa.jpg);
+  width: 20rem;
+  height: 25rem;
+  position: absolute;
+  left: 49.5rem;
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 2rem 2rem;
+  overflow: hidden;
+  padding: 8rem 1.5rem 1.5rem 1.5rem;
+}
+
+/******************** SCROLL DOWN ********************/
+
+.scroll_down {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 15rem;
+  bottom: 12rem;
+  transform: rotate(90deg);
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+/********* Media Queries(for Medium devices) *********/
+@media screen and (max-width: 1600px) {
+  .container {
+    /* background-color: tomato; */
+    left: 5rem;
+  }
+  .me {
+    left: 34.5rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    /* background-color: blueviolet; */
+  }
+  .me {
+    left: 30rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    /* background-color: blue; */
+    left: 1.5rem;
+  }
+  .me {
+    left: 22.5rem;
+    margin-top: 2rem;
+  }
+  .scroll_down {
+    right: 8rem;
+  }
+  .header_socials {
+    left: 8rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    /* background-color: coral; */
+    left: 3.5rem;
+  }
+  .me {
+    left: 12.5rem;
+    margin-top: 2rem;
+  }
+  .scroll_down {
+    right: 3rem;
+    bottom: 14.5rem;
+  }
+  .header_socials {
+    left: 4rem;
+    bottom: 12rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    /* background-color: rgb(99, 11, 252); */
+    left: 0.5rem;
+  }
+  .me {
+    left: 9rem;
+    margin-top: 2rem;
+  }
+  .scroll_down {
+    right: 2rem;
+    bottom: 13.5rem;
+  }
+  .header_socials {
+    left: 5rem;
+    bottom: 10rem;
+  }
+}
+/********* Media Queries(for Small devices) *********/
+@media screen and (max-width: 576px) {
+  .container {
+    /* background-color: red; */
+    left: 0.5rem;
+  }
+  .me {
+    left: 8.6rem;
+    margin-top: 2rem;
+  }
+  .scroll_down {
+    right: 0rem;
+    bottom: 13rem;
+  }
+  .header_socials {
+    left: 4rem;
+    bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    /* background-color: green; */
+  }
+  .me {
+    left: 6.5rem;
+    width: 60vw;
+    height: auto;
+  }
+  .scroll_down {
+    right: 1rem;
+    top: 26rem;
+  }
+  .header_socials {
+    left: 1rem;
+    top: 24rem;
+    display: none;
+  }
+}
+
+
+.myName {
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("../../assets/everest1.jpeg");
+}
+
+.t {
+  font-size: 1.2rem;
+}
+
+.p {
+  font-size: 1.2rem;
+}
